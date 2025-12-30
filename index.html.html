@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HotTopics | #Trending Now</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #ef4444;
+      --accent-2: #22c55e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; 
+      font-family: Arial, Helvetica, sans-serif;
+       background: linear-gradient(135deg, #020617, #020617 40%, #020617);
+      color: var(--text);
+    }
+    header {
+      position: sticky;
+       top: 0; z-index: 50;
+      background: rgba(2,6,23,0.9);
+       backdrop-filter: blur(6px);
+      border-bottom: 1px solid #1f2937;
+    }
+    .container {
+       max-width: 1200px;
+       margin: auto; 
+       padding: 16px;
+       }
+    .nav {
+       display: flex; 
+      align-items: center; 
+      justify-content: space-between; 
+      gap: 12px; 
+    }
+    .logo {
+       font-size: 22px; 
+       font-weight: 800; 
+       letter-spacing: .5px; 
+      }
+    .logo span {
+       color: var(--accent); 
+      }
+    .nav a {
+       color: var(--text); 
+       text-decoration: none; 
+       margin: 0 8px; 
+       font-weight: 600; 
+      }
+    .nav a:hover { 
+      color: var(--accent); 
+    }
+    .hero {
+      padding: 48px 16px;
+      background: radial-gradient(800px 300px at 50% 0%, rgba(239,68,68,.15), 
+      transparent 60%);
+      border-bottom: 1px solid #1f2937;
+    }
+    .hero h1 { font-size: 40px; 
+      margin: 0 0 8px;
+     }
+    .hero p {
+       color: var(--muted);
+       max-width: 700px;
+       }
+    .search { 
+      margin-top: 16px; 
+      display: flex; 
+      gap: 8px;
+     }
+    .search input {
+       flex: 1; 
+       padding: 12px; 
+       border-radius: 10px; 
+       border: 1px solid #1f2937; 
+       background: var(--card); 
+       color: var(--text); 
+      }
+    .search button { padding: 12px 16px;
+       border-radius: 10px; 
+       border: none;
+        background: var(--accent); 
+        color: #fff;
+         font-weight: 700; 
+         cursor: pointer;
+         }
+    .grid {
+       display: grid;
+       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+       gap: 16px; 
+      }
+    .card {
+      background: linear-gradient(180deg, #020617, #020617);
+      border: 1px solid #1f2937;
+       border-radius: 16px; 
+       padding: 16px;
+      box-shadow: 0 10px 20px rgba(0,0,0,.2);
+    }
+    .badge {
+       display: inline-block; 
+       padding: 4px 10px;
+        border-radius: 999px;
+         background: rgba(239,68,68,.15); 
+         color: var(--accent);
+          font-size: 12px; 
+          font-weight: 700;
+         }
+    .card h3 {
+       margin: 10px 0 8px;
+       }
+    .meta { 
+      font-size: 12px; 
+      color: var(--muted); 
+    }
+    .card p { 
+      color: #d1d5db; 
+    }
+    .actions { 
+      display: flex; 
+      gap: 8px;
+       margin-top: 12px; 
+      }
+    .btn {
+       flex: 1; 
+       padding: 10px; 
+       border-radius: 10px; 
+       border: 1px solid #1f2937; 
+       background: #020617;
+        color: var(--text);
+         cursor: pointer;
+          font-weight: 700; 
+        }
+    .btn.primary { 
+      background: var(--accent); 
+      border-color: var(--accent); 
+      color: #fff; 
+    }
+    section {
+       padding: 32px 16px; 
+      }
+    h2 { margin-bottom: 16px; }
+    .opinion textarea {
+       width: 100%; 
+       min-height: 90px; 
+       padding: 12px; 
+       border-radius: 10px; 
+       border: 1px solid #1f2937; 
+       background: var(--card);
+        color: var(--text); 
+      }
+    .opinion button { 
+      margin-top: 8px;
+     }
+    .comment {
+       border-top: 1px solid #1f2937;
+        padding: 10px 0; 
+      }
+    footer {
+       border-top: 1px solid #1f2937; 
+       background: #020617;
+       }
+    .social a {
+       margin-right: 10px; 
+       color: var(--muted); 
+       text-decoration: none; 
+      }
+    .social a:hover {
+       color: var(--accent-2); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">Hot<span>Topics</span></div>
+      <nav>
+        <a href="trending.html">#Trending🔥</a>
+        <a href="my opinion.html">My Opinion🤨</a>
+        <a href="public opinion.html">Public Opinion🤔</a>
+        <a href="contact.html">Contact🤙</a>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <h1>What’s Hot Right Now 🔥</h1>
+    <p>" This website will let you know what's happening in the world, what  <br>people like, what they prefer, and what they think. You can 
+        share <br> your interests, talk to each other, and get information about the latest  <br>trends. The  <b>HOT TOPICS|#TRENDING NOW</b> 
+        website will provide you 
+        with detailed  <br>information about new trends, and you can like, dislike, and  <br>share your opinions."</p>
+      <div class="search">
+        <input id="search" placeholder="Search trending topics..." />
+        <button onclick="filterCards()">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="trending">
+    <div class="container"> 
+       <h1>#Trending News 🔥:)</h1>
+    
+       <p></p>
+
+  <section id="my opinion">
+    <div class="container">
+      <h2> My Opinion 🤨 </h2>
+     
+
+    </div>
+  </section>
+
+ <section id="opinion">
+    <div class="container">
+      <h2>Public Opinion 🤔 </h2>
+      <div class="card opinion">
+        <textarea id="commentText" placeholder="Share your opinion..."></textarea>
+        <button class="btn primary" onclick="addComment()">Post Opinion</button>
+        <div id="comments"></div>
+      </div>
+    </div>
+  </section>
+
+
+      <h1>About me 😎 </h1>
+      <p>
+         "Hello everyone! <br>
+       I'm excited to introduce myself on this website, which I've named <b> "HOT TOPICS"</b> . I designed this website <br> myself  because I have a passion for
+       learning new things and sharing them with others. I enjoy <br>reading  books and exploring various topics. <br>
+    Let me start by sharing my story with you. You can call me whatever name you want. I completed my  <br>intermediate in pre-medical, 
+    but I've always been interested in computers and math. However, my mother  <br>wanted me to pursue biology, so i chose
+    that in 9th grade. Later, when I got admission in 1st year, I wanted to <br> opt for pre-engineering, but my father got me admitted to 
+    pre-medical. I didn't do well in that, and I <br>ended up with a B grade. <br>
+    After that, I did a computer course and discovered my passion for coding and web development. I 
+    wanted  <br>to pursue computer science in graduation, but i didn't get admission due to low marks and 
+    high fees. I  <br>then thought of doing a job and saving money for further studies. <br>
+    I completed a Diploma in information technology (DIT) and now i'm trying to figure out what to do next. <br> A relative helped me connect with 
+    someone in the field, and i'm currently working on building <br> my skills. <br>
+     The idea for this website came from my relative co-leak and a Korean serial i follow me.  <br> 
+     <h2>   <b>Thanks you for reading and following me! </b>" </h2>
+   
+      </p>
+    
+      </section>
+ 
+
+</div>
+ 
+
+  <footer id="contact">
+    <div class="container">
+      <p>© 2025 HotTopics. All rights reserved.</p>
+      <div class="social">
+       <a href="https://mailto:nh7075515@gmail.com"> Gmail</a>
+
+        <a href="https://x.com/@ndingnow">X (Twitter)</a>
+
+        <a href="https://www.instagram.com/tre_ndingnow123">Instagram</a>
+
+        <a href="https://wa.me/923095872349"> What’sapp</a>
+        
+      </div>
+             <p>Do you like this website</p>
+<button onclick="vote('yes👍')">👍</button>
+<button onclick="vote('no👎')">👎</button>
+
+<script>
+function vote(answer) {
+  alert("You voted: " + answer);
+}
+</script>
+    </div>
+  </footer>
+
+  <script>
+    function filterCards() {
+      const q = document.getElementById('search').value.toLowerCase();
+      document.querySelectorAll('.card').forEach(c => {
+        const t = c.getAttribute('data-title').toLowerCase();
+        c.style.display = t.includes(q) ? 'block' : 'none';
+      });
+    }
+    function addComment() {
+      const text = document.getElementById('commentText').value.trim();
+      if (!text) return;
+      const div = document.createElement('div');
+      div.className = 'comment';
+      div.textContent = text;
+      document.getElementById('comments').prepend(div);
+      document.getElementById('commentText').value = '';
+    }
+  </script>
+</body>
+</html>
